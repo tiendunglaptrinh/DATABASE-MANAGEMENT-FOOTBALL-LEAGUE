@@ -1,0 +1,638 @@
+INSERT INTO NATION (FFCountryCode, Continent, Nname) VALUES
+('USA', 'North America', 'United States'),
+('BRA', 'South America', 'Brazil'),
+('GER', 'Europe', 'Germany'),
+('FRA', 'Europe', 'France'),
+('CHN', 'Asia', 'China'),
+('IND', 'Asia', 'India'),
+('NGA', 'Africa', 'Nigeria'),
+('ARG', 'South America', 'Argentina'),
+('MEX', 'North America', 'Mexico'),
+('RUS', 'Europe', 'Russia'),
+('GBR', 'Europe', 'United Kingdom'),
+('JPN', 'Asia', 'Japan'),
+('CAN', 'North America', 'Canada'),
+('AUS', 'Oceania', 'Australia'),
+('ESP', 'Europe', 'Spain'),
+('ITA', 'Europe', 'Italy'),
+('KOR', 'Asia', 'South Korea'),
+('SAU', 'Asia', 'Saudi Arabia'),
+('EGY', 'Africa', 'Egypt'),
+('NLD', 'Europe', 'Netherlands'),
+('NGR', 'Africa', 'Ghana'),
+('COL', 'South America', 'Colombia'),
+('SWE', 'Europe', 'Sweden'),
+('ISR', 'Asia', 'Israel'),
+('IRN', 'Asia', 'Iran'),
+('TUR', 'Asia', 'Turkey'),
+('POL', 'Europe', 'Poland'),
+('BEL', 'Europe', 'Belgium'),
+('AUT', 'Europe', 'Austria'),
+('ARG', 'South America', 'Argentina'),
+('CHL', 'South America', 'Chile'),
+('CZE', 'Europe', 'Czech Republic'),
+('DNK', 'Europe', 'Denmark'),
+('FIN', 'Europe', 'Finland'),
+('HUN', 'Europe', 'Hungary'),
+('IRL', 'Europe', 'Ireland'),
+('MYS', 'Asia', 'Malaysia'),
+('NOR', 'Europe', 'Norway'),
+('PRT', 'Europe', 'Portugal'),
+('SGP', 'Asia', 'Singapore'),
+('THA', 'Asia', 'Thailand'),
+('UKR', 'Europe', 'Ukraine'),
+('VNM', 'Asia', 'Vietnam'),
+('ZAF', 'Africa', 'South Africa'),
+('MNG', 'Asia', 'Mongolia'),
+('BGR', 'Europe', 'Bulgaria'),
+('HRV', 'Europe', 'Croatia'),
+('IDN', 'Asia', 'Indonesia'),
+('LKA', 'Asia', 'Sri Lanka'),
+('MYS', 'Asia', 'Malaysia');
+
+INSERT INTO SEASON (HostYearCode, OpenDate, CloseDate, No_Team, S_FFCCode)
+VALUES 
+    (2022, '2022-06-21', '2022-07-15', 10, 'QAT');
+
+INSERT INTO REFEREE (RefID, FName, LName, Age, Gender, NationName, Position) VALUES
+(123456, 'John', 'Doe', 35, 'M', 'United States', 'Main Referee'),
+(789012, 'Jane', 'Smith', 40, 'F', 'Brazil', 'Assistant Referee'),
+(345678, 'Michael', 'Johnson', 38, 'M', 'Germany', 'Main Referee'),
+(901234, 'Sophia', 'Williams', 42, 'F', 'France', 'Assistant Referee'),
+(567890, 'David', 'Brown', 30, 'M', 'China', 'Main Referee'),
+(123789, 'Emma', 'Jones', 45, 'F', 'India', 'Assistant Referee'),
+(456789, 'Matthew', 'Davis', 36, 'M', 'Nigeria', 'Main Referee'),
+(987654, 'Olivia', 'Miller', 41, 'F', 'Argentina', 'Assistant Referee'),
+(234567, 'Daniel', 'Martinez', 32, 'M', 'Mexico', 'Main Referee'),
+(890123, 'Emily', 'Taylor', 37, 'F', 'Russia', 'Assistant Referee'),
+(345678, 'Ethan', 'Anderson', 39, 'M', 'United Kingdom', 'Main Referee'),
+(654321, 'Ava', 'Thomas', 44, 'F', 'Japan', 'Assistant Referee'),
+(789012, 'Noah', 'White', 31, 'M', 'Canada', 'Main Referee'),
+(210987, 'Sophia', 'Harris', 38, 'F', 'Australia', 'Assistant Referee'),
+(543210, 'Logan', 'Clark', 33, 'M', 'Spain', 'Main Referee'),
+(876543, 'Lily', 'Turner', 47, 'F', 'Italy', 'Assistant Referee'),
+(321098, 'Liam', 'King', 29, 'M', 'South Korea', 'Main Referee'),
+(789012, 'Aria', 'Garcia', 43, 'F', 'Saudi Arabia', 'Assistant Referee'),
+(345678, 'Mia', 'Allen', 36, 'F', 'Egypt', 'Main Referee'),
+(987654, 'Caden', 'Young', 39, 'M', 'Netherlands', 'Assistant Referee'),
+(234567, 'Abigail', 'Lewis', 40, 'F', 'Ghana', 'Main Referee'),
+(876543, 'Jack', 'Scott', 33, 'M', 'Colombia', 'Assistant Referee'),
+(543210, 'Sophie', 'Ward', 45, 'F', 'Sweden', 'Main Referee'),
+(432109, 'Alexander', 'Green', 28, 'M', 'Israel', 'Assistant Referee'),
+(890123, 'Aiden', 'Anderson', 41, 'M', 'Iran', 'Main Referee'),
+(210987, 'Zoe', 'Wright', 34, 'F', 'Turkey', 'Assistant Referee'),
+(567890, 'Elijah', 'Martin', 37, 'M', 'Poland', 'Main Referee'),
+(123456, 'Scarlett', 'Evans', 46, 'F', 'Belgium', 'Assistant Referee'),
+(345678, 'Lucas', 'Cooper', 29, 'M', 'Austria', 'Main Referee'),
+(876543, 'Chloe', 'Diaz', 42, 'F', 'Argentina', 'Assistant Referee'),
+(987654, 'Gabriel', 'Perez', 35, 'M', 'Chile', 'Main Referee'),
+(543210, 'Madison', 'Morales', 40, 'F', 'Czech Republic', 'Assistant Referee'),
+(234567, 'Jackson', 'Baker', 31, 'M', 'Denmark', 'Main Referee'),
+(789012, 'Luna', 'Rodriguez', 44, 'F', 'Finland', 'Assistant Referee'),
+(876543, 'Mateo', 'Stewart', 32, 'M', 'Hungary', 'Main Referee'),
+(321098, 'Hazel', 'Fisher', 39, 'F', 'Ireland', 'Assistant Referee'),
+(567890, 'Lincoln', 'Ward', 37, 'M', 'Malaysia', 'Main Referee'),
+(543210, 'Grace', 'Sullivan', 45, 'F', 'Norway', 'Assistant Referee'),
+(987654, 'Nathan', 'Hunter', 34, 'M', 'Portugal', 'Main Referee'),
+(210987, 'Eva', 'Peters', 46, 'F', 'Singapore', 'Assistant Referee'),
+(876543, 'Isaac', 'Rossi', 30, 'M', 'Thailand', 'Main Referee'),
+(345678, 'Avery', 'Lee', 43, 'F', 'Ukraine', 'Assistant Referee'),
+(543210, 'Evan', 'Gomez', 36, 'M', 'Vietnam', 'Main Referee'),
+(123456, 'Aurora', 'Morgan', 41, 'F', 'South Africa', 'Assistant Referee'),
+(654321, 'Adrian', 'Ferguson', 38, 'M', 'Mongolia', 'Main Referee'),
+(789012, 'Paisley', 'Knight', 33, 'F', 'Bulgaria', 'Assistant Referee'),
+(210987, 'Xavier', 'Duncan', 29, 'M', 'Croatia', 'Main Referee'),
+(567890, 'Bella', 'Warren', 42, 'F', 'Indonesia', 'Assistant Referee'),
+(432109, 'Leo', 'Fleming', 35, 'M', 'Sri Lanka', 'Main Referee'),
+(987654, 'Skylar', 'Kennedy', 47, 'F', 'Malaysia', 'Assistant Referee');
+
+INSERT INTO STADIUM (StadiumCode, SName, Address) VALUES
+('ABC01', 'Stadium Alpha', '123 Main Street, City Alpha'),
+('DEF02', 'Stadium Bravo', '456 Park Avenue, City Bravo'),
+('GHI03', 'Stadium Charlie', '789 Oak Lane, City Charlie'),
+('JKL04', 'Stadium Delta', '101 Pine Road, City Delta'),
+('MNO05', 'Stadium Echo', '202 Maple Drive, City Echo'),
+('PQR06', 'Stadium Foxtrot', '303 Elm Street, City Foxtrot'),
+('STU07', 'Stadium Golf', '404 Cedar Lane, City Golf'),
+('VWX08', 'Stadium Hotel', '505 Birch Road, City Hotel');
+
+INSERT INTO SEASON_TEAM (TeamName, T_FFCCode) VALUES
+('TeamAlpha', 'USA'),
+('TeamBravo', 'BRA'),
+('TeamCharlie', 'GER'),
+('TeamDelta', 'FRA'),
+('TeamEcho', 'CHN'),
+('TeamFoxtrot', 'IND'),
+('TeamGolf', 'NGA'),
+('TeamHotel', 'ARG'),
+('TeamIndia', 'MEX'),
+('TeamJuliet', 'RUS');
+
+INSERT INTO SPONSOR (SpsName, SpsType) VALUES
+('Nike', 'Sportswear'),
+('Adidas', 'Sportswear'),
+('Coca-Cola', 'Beverages'),
+('Pepsi', 'Beverages'),
+('Samsung', 'Technology'),
+('Apple', 'Technology'),
+('Toyota', 'Automobile'),
+('Ford', 'Automobile'),
+('McDonald''s', 'Fast Food'),
+('KFC', 'Fast Food'),
+('Sony', 'Electronics'),
+('Panasonic', 'Electronics'),
+('MasterCard', 'Finance'),
+('Visa', 'Finance'),
+('Chevrolet', 'Automobile'),
+('Honda', 'Automobile'),
+('IBM', 'Technology'),
+('Microsoft', 'Technology');
+
+INSERT INTO SPONSOR_FOR (SF_Name, SF_Team, Finance) VALUES
+('Nike', 'TeamAlpha', 1000000.00),
+('Adidas', 'TeamBravo', 800000.00),
+('Coca-Cola', 'TeamCharlie', 1200000.00),
+('Pepsi', 'TeamDelta', 900000.00),
+('Samsung', 'TeamEcho', 1500000.00),
+('Apple', 'TeamFoxtrot', 2000000.00),
+('Toyota', 'TeamGolf', 1300000.00),
+('Ford', 'TeamHotel', 1100000.00),
+('McDonald''s', 'TeamIndia', 1800000.00),
+('KFC', 'TeamJuliet', 1600000.00);
+
+INSERT INTO PARTICIPATE_IN (P_FFCCode, P_HYearCode) VALUES
+('USA', 2022),
+('BRA', 2022),
+('GER', 2022),
+('FRA', 2022),
+('CHN', 2022),
+('IND', 2022),
+('NGA', 2022),
+('ARG', 2022),
+('MEX', 2022),
+('RUS', 2022);
+
+INSERT INTO INCLUDE (I_HYearCode, I_TeamName, No_player) VALUES
+(2022, 'TeamAlpha', 25),
+(2022, 'TeamBravo', 23),
+(2022, 'TeamCharlie', 24),
+(2022, 'TeamDelta', 22),
+(2022, 'TeamEcho', 26),
+(2022, 'TeamFoxtrot', 20),
+(2022, 'TeamGolf', 21),
+(2022, 'TeamHotel', 19),
+(2022, 'TeamIndia', 18),
+(2022, 'TeamJuliet', 27);
+
+-- Insert data into GATE_STADIUM table
+INSERT INTO GATE_STADIUM (GateStadium, GS_SCode) VALUES
+(1, 'ABC01'),
+(2, 'ABC01'),
+(3, 'ABC01'),
+(1, 'DEF02'),
+(2, 'DEF02'),
+(1, 'GHI03'),
+(2, 'GHI03'),
+(3, 'GHI03'),
+(1, 'JKL04'),
+(2, 'JKL04'),
+(1, 'MNO05'),
+(2, 'MNO05'),
+(1, 'PQR06'),
+(2, 'PQR06'),
+(3, 'PQR06'),
+(1, 'STU07'),
+(2, 'STU07'),
+(1, 'VWX08'),
+(2, 'VWX08'),
+(3, 'VWX08');
+
+INSERT INTO MATCHES (MatchCode, M_HYearCode, TimeStart, TimeFinish, MatchDate, M_SCode)
+VALUES
+('M1', 2022, '18:00', '20:00', '2022-06-21', 'ABC01'),  -- TeamAlpha vs TeamBravo
+('M2', 2022, '19:00', '21:00', '2022-06-22', 'ABC01'),  -- TeamAlpha vs TeamCharlie
+('M3', 2022, '20:00', '22:00', '2022-06-23', 'ABC01'),  -- TeamAlpha vs TeamDelta
+('M4', 2022, '18:00', '20:00', '2022-06-24', 'ABC01'),  -- TeamAlpha vs TeamEcho
+('M5', 2022, '19:00', '21:00', '2022-06-25', 'ABC01'),  -- TeamAlpha vs TeamFoxtrot
+('M6', 2022, '18:00', '20:00', '2022-06-26', 'DEF02'),  -- TeamBravo vs TeamCharlie
+('M7', 2022, '19:00', '21:00', '2022-06-27', 'DEF02'),  -- TeamBravo vs TeamDelta
+('M8', 2022, '20:00', '22:00', '2022-06-28', 'DEF02'),  -- TeamBravo vs TeamEcho
+('M9', 2022, '18:00', '20:00', '2022-06-29', 'DEF02'),  -- TeamBravo vs TeamFoxtrot
+('M10', 2022, '19:00', '21:00', '2022-06-30', 'DEF02'), -- TeamBravo vs TeamGolf
+('M11', 2022, '18:00', '20:00', '2022-07-01', 'GHI03'),  -- TeamCharlie vs TeamDelta
+('M12', 2022, '19:00', '21:00', '2022-07-02', 'GHI03'),  -- TeamCharlie vs TeamEcho
+('M13', 2022, '20:00', '22:00', '2022-07-03', 'GHI03'),  -- TeamCharlie vs TeamFoxtrot
+('M14', 2022, '18:00', '20:00', '2022-07-04', 'GHI03'),  -- TeamCharlie vs TeamGolf
+('M15', 2022, '19:00', '21:00', '2022-07-05', 'GHI03'),  -- TeamCharlie vs TeamHotel
+('M16', 2022, '18:00', '20:00', '2022-07-06', 'JKL04'),  -- TeamDelta vs TeamEcho
+('M17', 2022, '19:00', '21:00', '2022-07-07', 'JKL04'),  -- TeamDelta vs TeamFoxtrot
+('M18', 2022, '20:00', '22:00', '2022-07-08', 'JKL04'),  -- TeamDelta vs TeamGolf
+('M19', 2022, '18:00', '20:00', '2022-07-09', 'JKL04'),  -- TeamDelta vs TeamHotel
+('M20', 2022, '19:00', '21:00', '2022-07-10', 'MNO05'),  -- TeamEcho vs TeamFoxtrot
+('M21', 2022, '18:00', '20:00', '2022-07-11', 'MNO05'),  -- TeamEcho vs TeamGolf
+('M22', 2022, '19:00', '21:00', '2022-07-12', 'MNO05'),  -- TeamEcho vs TeamHotel
+('M23', 2022, '20:00', '22:00', '2022-07-13', 'PQR06'),  -- TeamFoxtrot vs TeamGolf
+('M24', 2022, '18:00', '20:00', '2022-07-14', 'PQR06'),  -- TeamFoxtrot vs TeamHotel
+('M25', 2022, '19:00', '21:00', '2022-07-15', 'STU07'),  -- TeamGolf vs TeamHotel
+('M26', 2022, '20:00', '22:00', '2022-07-16', 'STU07'),  -- TeamGolf vs TeamAlpha
+('M27', 2022, '18:00', '20:00', '2022-07-17', 'STU07'),  -- TeamGolf vs TeamBravo
+('M28', 2022, '19:00', '21:00', '2022-07-18', 'STU07'),  -- TeamGolf vs TeamCharlie
+('M29', 2022, '20:00', '22:00', '2022-07-19', 'STU07'),  -- TeamGolf vs TeamDelta
+('M30', 2022, '18:00', '20:00', '2022-07-20', 'STU07'),  -- TeamGolf vs TeamEcho
+('M31', 2022, '19:00', '21:00', '2022-07-21', 'MNO05'),  -- TeamEcho vs TeamFoxtrot
+('M32', 2022, '20:00', '22:00', '2022-07-22', 'MNO05'),  -- TeamEcho vs TeamHotel
+('M33', 2022, '18:00', '20:00', '2022-07-23', 'MNO05'),  -- TeamEcho vs TeamAlpha
+('M34', 2022, '19:00', '21:00', '2022-07-24', 'MNO05'),  -- TeamEcho vs TeamBravo
+('M35', 2022, '20:00', '22:00', '2022-07-25', 'MNO05'),  -- TeamEcho vs TeamCharlie
+('M36', 2022, '18:00', '20:00', '2022-07-26', 'PQR06'),  -- TeamFoxtrot vs TeamGolf
+('M37', 2022, '19:00', '21:00', '2022-07-27', 'PQR06'),  -- TeamFoxtrot vs TeamHotel
+('M38', 2022, '20:00', '22:00', '2022-07-28', 'PQR06'),  -- TeamFoxtrot vs TeamAlpha
+('M39', 2022, '18:00', '20:00', '2022-07-29', 'PQR06'),  -- TeamFoxtrot vs TeamBravo
+('M40', 2022, '19:00', '21:00', '2022-07-30', 'PQR06'),  -- TeamFoxtrot vs TeamCharlie
+('M41', 2022, '18:00', '20:00', '2022-07-31', 'STU07'),  -- TeamGolf vs TeamHotel
+('M42', 2022, '19:00', '21:00', '2022-08-01', 'STU07'),  -- TeamGolf vs TeamAlpha
+('M43', 2022, '20:00', '22:00', '2022-08-02', 'STU07'),  -- TeamGolf vs TeamBravo
+('M44', 2022, '18:00', '20:00', '2022-08-03', 'STU07'),  -- TeamGolf vs TeamCharlie
+('M45', 2022, '19:00', '21:00', '2022-08-04', 'STU07');   -- TeamGolf vs TeamHotel
+
+INSERT INTO TEAM_MEMBER (MemberCode, FName, Minit, LName, Age, Gender, Nationality, TM_Team)
+VALUES
+-- TeamAlpha members
+    ('A01P01', 'John', 'A', 'Doe', 25, 'M', 'USA', 'TeamAlpha'),
+    ('A01P02', 'Jane', 'B', 'Smith', 27, 'F', 'CAN', 'TeamAlpha'),
+    ('A01P03', 'Robert', 'C', 'Johnson', 23, 'M', 'ENG', 'TeamAlpha'),
+    ('A01P04', 'Emily', 'D', 'Anderson', 26, 'F', 'AUS', 'TeamAlpha'),
+    ('A01P05', 'William', 'E', 'Davis', 24, 'M', 'BRA', 'TeamAlpha'),
+    ('A01P06', 'Emma', 'F', 'Garcia', 22, 'F', 'FRA', 'TeamAlpha'),
+    ('A01P07', 'Michael', 'G', 'Brown', 28, 'M', 'GER', 'TeamAlpha'),
+    ('A01P08', 'Sophia', 'H', 'Wilson', 25, 'F', 'ITA', 'TeamAlpha'),
+    ('A01P09', 'James', 'I', 'Martinez', 23, 'M', 'JPN', 'TeamAlpha'),
+    ('A01P10', 'Olivia', 'J', 'Lopez', 27, 'F', 'KOR', 'TeamAlpha'),
+
+-- TeamBravo members
+	('B02P01', 'Daniel', 'A', 'Hernandez', 24, 'M', 'ARG', 'TeamBravo'),
+    ('B02P02', 'Ava', 'B', 'Wang', 26, 'F', 'CHI', 'TeamBravo'),
+    ('B02P03', 'Ethan', 'C', 'Luna', 22, 'M', 'COL', 'TeamBravo'),
+    ('B02P04', 'Mia', 'D', 'Lee', 28, 'F', 'IND', 'TeamBravo'),
+    ('B02P05', 'Noah', 'E', 'Nguyen', 24, 'M', 'JPN', 'TeamBravo'),
+    ('B02P06', 'Isabella', 'F', 'Kim', 23, 'F', 'KOR', 'TeamBravo'),
+    ('B02P07', 'Liam', 'G', 'Singh', 27, 'M', 'USA', 'TeamBravo'),
+    ('B02P08', 'Zoe', 'H', 'Nguyen', 25, 'F', 'VIE', 'TeamBravo'),
+    ('B02P09', 'Alexander', 'I', 'Smith', 23, 'M', 'RUS', 'TeamBravo'),
+    ('B02P10', 'Sophie', 'J', 'Harris', 28, 'F', 'SWE', 'TeamBravo'),
+
+-- TeamCharlie members
+	('C03P01', 'William', 'A', 'Brown', 26, 'M', 'AUS', 'TeamCharlie'),
+    ('C03P02', 'Emma', 'B', 'Garcia', 24, 'F', 'BRA', 'TeamCharlie'),
+    ('C03P03', 'James', 'C', 'Martinez', 22, 'M', 'CAN', 'TeamCharlie'),
+    ('C03P04', 'Sophia', 'D', 'Davis', 28, 'F', 'CHI', 'TeamCharlie'),
+    ('C03P05', 'Aiden', 'E', 'Hernandez', 25, 'M', 'COL', 'TeamCharlie'),
+    ('C03P06', 'Luna', 'F', 'Wang', 23, 'F', 'ENG', 'TeamCharlie'),
+    ('C03P07', 'Elijah', 'G', 'Johnson', 27, 'M', 'FRA', 'TeamCharlie'),
+    ('C03P08', 'Olivia', 'H', 'Lopez', 25, 'F', 'GER', 'TeamCharlie'),
+    ('C03P09', 'Liam', 'I', 'Anderson', 23, 'M', 'IND', 'TeamCharlie'),
+    ('C03P10', 'Zoe', 'J', 'Smith', 28, 'F', 'ITA', 'TeamCharlie'),
+
+-- TeamDetal members
+    ('D04P01', 'Ethan', 'A', 'Wilson', 24, 'M', 'JPN', 'TeamDelta'),
+    ('D04P02', 'Mia', 'B', 'Lopez', 26, 'F', 'KOR', 'TeamDelta'),
+    ('D04P03', 'Noah', 'C', 'Nguyen', 22, 'M', 'MEX', 'TeamDelta'),
+    ('D04P04', 'Isabella', 'D', 'Harris', 28, 'F', 'NED', 'TeamDelta'),
+    ('D04P05', 'Liam', 'E', 'Wang', 25, 'M', 'POR', 'TeamDelta'),
+    ('D04P06', 'Sophie', 'F', 'Lee', 23, 'F', 'RUS', 'TeamDelta'),
+    ('D04P07', 'Alexander', 'G', 'Singh', 27, 'M', 'SWE', 'TeamDelta'),
+    ('D04P08', 'Zoe', 'H', 'Smith', 25, 'F', 'USA', 'TeamDelta'),
+    ('D04P09', 'Elijah', 'I', 'Garcia', 23, 'M', 'VIE', 'TeamDelta'),
+    ('D04P10', 'Luna', 'J', 'Anderson', 28, 'F', 'ARG', 'TeamDelta'),
+
+-- TeamEcho members
+    ('E05P01', 'Aiden', 'A', 'Nguyen', 25, 'M', 'BRA', 'TeamEcho'),
+    ('E05P02', 'Zoe', 'B', 'Hernandez', 28, 'F', 'CAN', 'TeamEcho'),
+    ('E05P03', 'Sophie', 'C', 'Wang', 23, 'F', 'COL', 'TeamEcho'),
+    ('E05P04', 'Alexander', 'D', 'Singh', 24, 'M', 'ENG', 'TeamEcho'),
+    ('E05P05', 'Luna', 'E', 'Lopez', 26, 'F', 'FRA', 'TeamEcho'),
+    ('E05P06', 'Elijah', 'F', 'Smith', 22, 'M', 'GER', 'TeamEcho'),
+    ('E05P07', 'Olivia', 'G', 'Johnson', 27, 'F', 'IND', 'TeamEcho'),
+    ('E05P08', 'Liam', 'H', 'Martinez', 25, 'M', 'ITA', 'TeamEcho'),
+    ('E05P09', 'William', 'I', 'Brown', 23, 'M', 'JPN', 'TeamEcho'),
+    ('E05P10', 'Emma', 'J', 'Davis', 24, 'F', 'KOR', 'TeamEcho'),
+
+-- TeamFoxtrot members
+    ('F06P01', 'Ava', 'A', 'Garcia', 26, 'F', 'MEX', 'TeamFoxtrot'),
+    ('F06P02', 'Liam', 'B', 'Wang', 24, 'M', 'NED', 'TeamFoxtrot'),
+    ('F06P03', 'Noah', 'C', 'Brown', 28, 'M', 'POR', 'TeamFoxtrot'),
+    ('F06P04', 'Sophia', 'D', 'Lopez', 22, 'F', 'RUS', 'TeamFoxtrot'),
+    ('F06P05', 'Ethan', 'E', 'Hernandez', 25, 'M', 'SWE', 'TeamFoxtrot'),
+    ('F06P06', 'Mia', 'F', 'Johnson', 23, 'F', 'USA', 'TeamFoxtrot'),
+    ('F06P07', 'Olivia', 'G', 'Martinez', 27, 'F', 'VIE', 'TeamFoxtrot'),
+    ('F06P08', 'Zoe', 'H', 'Smith', 24, 'F', 'ARG', 'TeamFoxtrot'),
+    ('F06P09', 'Alexander', 'I', 'Singh', 28, 'M', 'BRA', 'TeamFoxtrot'),
+    ('F06P10', 'Luna', 'J', 'Nguyen', 22, 'F', 'CHI', 'TeamFoxtrot'),
+
+-- TeamGolf members
+    ('G07P01', 'Sophie', 'A', 'Wang', 23, 'F', 'COL', 'TeamGolf'),
+    ('G07P02', 'Ethan', 'B', 'Lee', 27, 'M', 'ENG', 'TeamGolf'),
+    ('G07P03', 'Isabella', 'C', 'Anderson', 25, 'F', 'FRA', 'TeamGolf'),
+    ('G07P04', 'Aiden', 'D', 'Brown', 23, 'M', 'GER', 'TeamGolf'),
+    ('G07P05', 'Mia', 'E', 'Garcia', 28, 'F', 'IND', 'TeamGolf'),
+    ('G07P06', 'Noah', 'F', 'Hernandez', 24, 'M', 'ITA', 'TeamGolf'),
+    ('G07P07', 'Zoe', 'G', 'Johnson', 22, 'F', 'JPN', 'TeamGolf'),
+    ('G07P08', 'Liam', 'H', 'Lopez', 27, 'M', 'KOR', 'TeamGolf'),
+    ('G07P09', 'Olivia', 'I', 'Smith', 25, 'F', 'MEX', 'TeamGolf'),
+    ('G07P10', 'Luna', 'J', 'Nguyen', 23, 'F', 'NED', 'TeamGolf'),
+
+-- TeamHotel members
+    ('H08P01', 'Elijah', 'K', 'Smith', 26, 'M', 'RUS', 'TeamHotel'),
+    ('H08P02', 'Olivia', 'L', 'Garcia', 23, 'F', 'SWE', 'TeamHotel'),
+    ('H08P03', 'Aiden', 'M', 'Brown', 28, 'M', 'USA', 'TeamHotel'),
+    ('H08P04', 'Zoe', 'N', 'Martinez', 25, 'F', 'VIE', 'TeamHotel'),
+    ('H08P05', 'Sophie', 'O', 'Anderson', 23, 'F', 'ARG', 'TeamHotel'),
+    ('H08P06', 'Ethan', 'P', 'Lopez', 27, 'M', 'COL', 'TeamHotel'),
+    ('H08P07', 'Isabella', 'Q', 'Wang', 25, 'F', 'ENG', 'TeamHotel'),
+    ('H08P08', 'Ava', 'R', 'Hernandez', 23, 'F', 'FRA', 'TeamHotel'),
+    ('H08P09', 'Noah', 'S', 'Johnson', 28, 'M', 'GER', 'TeamHotel'),
+    ('H08P10', 'Liam', 'T', 'Nguyen', 22, 'M', 'IND', 'TeamHotel'),
+
+-- TeamIndia members
+    ('I09P01', 'Emma', 'K', 'Harris', 24, 'F', 'ITA', 'TeamIndia'),
+    ('I09P02', 'Michael', 'L', 'Singh', 26, 'M', 'JPN', 'TeamIndia'),
+    ('I09P03', 'Ava', 'M', 'Wang', 22, 'F', 'KOR', 'TeamIndia'),
+    ('I09P04', 'Luna', 'N', 'Lee', 28, 'F', 'MEX', 'TeamIndia'),
+    ('I09P05', 'Noah', 'O', 'Lopez', 24, 'M', 'NED', 'TeamIndia'),
+    ('I09P06', 'Sophia', 'P', 'Anderson', 23, 'F', 'POR', 'TeamIndia'),
+    ('I09P07', 'Elijah', 'Q', 'Smith', 27, 'M', 'RUS', 'TeamIndia'),
+    ('I09P08', 'Olivia', 'R', 'Garcia', 25, 'F', 'SWE', 'TeamIndia'),
+    ('I09P09', 'Liam', 'S', 'Brown', 23, 'M', 'USA', 'TeamIndia'),
+    ('I09P10', 'Zoe', 'T', 'Martinez', 28, 'F', 'VIE', 'TeamIndia'),
+
+-- TeamJuliet members
+    ('J10P01', 'Alexander', 'K', 'Hernandez', 25, 'M', 'BRA', 'TeamJuliet'),
+    ('J10P02', 'Luna', 'L', 'Wang', 28, 'F', 'CHI', 'TeamJuliet'),
+    ('J10P03', 'Noah', 'M', 'Brown', 23, 'M', 'COL', 'TeamJuliet'),
+    ('J10P04', 'Sophie', 'N', 'Garcia', 24, 'F', 'ENG', 'TeamJuliet'),
+    ('J10P05', 'Ethan', 'O', 'Johnson', 26, 'M', 'FRA', 'TeamJuliet'),
+    ('J10P06', 'Isabella', 'P', 'Anderson', 22, 'F', 'GER', 'TeamJuliet'),
+    ('J10P07', 'Aiden', 'Q', 'Lopez', 27, 'M', 'IND', 'TeamJuliet'),
+    ('J10P08', 'Zoe', 'R', 'Martinez', 25, 'F', 'ITA', 'TeamJuliet'),
+    ('J10P09', 'Olivia', 'S', 'Smith', 23, 'F', 'JPN', 'TeamJuliet'),
+    ('J10P10', 'Liam', 'T', 'Nguyen', 28, 'M', 'KOR', 'TeamJuliet');
+
+INSERT INTO COACH (CoachCode, CoachCef, Experience, LeadCode, C_Team)
+VALUES
+-- TeamAlpha coaches
+('A01P01', 'UEFA Pro', 5, NULL, 'TeamAlpha'), -- Head Coach
+('A01P02', 'UEFA B', 3, 'ABC01P01', 'TeamAlpha'), -- Assistant Coach
+
+-- TeamBravo coaches
+('B02P01', 'CONMEBOL Pro', 4, NULL, 'TeamBravo'), -- Head Coach
+('B02P02', 'CONMEBOL A', 2, 'DEF02P01', 'TeamBravo'), -- Assistant Coach
+
+-- TeamCharlie coaches
+('C03P01', 'AFC Pro', 4, NULL, 'TeamCharlie'), -- Head Coach
+('C03P02', 'AFC A', 2, 'ABC01P03', 'TeamCharlie'), -- Assistant Coach
+
+-- TeamDelta coaches
+('D04P01', 'CAF Pro', 3, NULL, 'TeamDelta'), -- Head Coach
+('D04P02', 'CAF B', 1, 'DEF02P03', 'TeamDelta'), -- Assistant Coach
+
+-- TeamEcho coaches
+('E05P01', 'AFC Pro', 5, NULL, 'TeamEcho'), -- Head Coach
+('E05P02', 'AFC A', 3, 'MNO05P13', 'TeamEcho'), -- Assistant Coach
+
+-- TeamFoxtrot coaches
+('F06P01', 'CAF Pro', 4, NULL, 'TeamFoxtrot'), -- Head Coach
+('F06P02', 'CAF B', 2, 'PQR06P13', 'TeamFoxtrot'), -- Assistant Coach
+
+-- TeamGolf coaches
+('G07P01', 'AFC Pro', 5, NULL, 'TeamGolf'), -- Head Coach
+('G07P02', 'AFC A', 3, 'STU07P13', 'TeamGolf'), -- Assistant Coach
+
+-- TeamHotel coaches
+('H08P01', 'UEFA A', 4, NULL, 'TeamHotel'), -- Head Coach
+('H08P02', 'UEFA B', 2, 'MNO05P11', 'TeamHotel'), -- Assistant Coach
+
+-- TeamIndia coaches
+('I09P01', 'CONMEBOL Pro', 3, NULL, 'TeamIndia'), -- Head Coach
+('I09P02', 'CONMEBOL A', 1, 'PQR06P11', 'TeamIndia'), -- Assistant Coach
+
+-- TeamJuliet coaches
+('J10P01', 'UEFA Pro', 5, NULL, 'TeamJuliet'), -- Head Coach
+('J10P02', 'UEFA B', 3, 'STU07P11', 'TeamJuliet'); -- Assistant Coach
+
+INSERT INTO STAFF (StaffCode, Position)
+VALUES
+-- TeamAlpha staff
+    ('A01P03', 'Physiotherapist'),
+    ('A01P04', 'Analyst'),
+
+-- TeamBravo staff
+    ('B02P03', 'Fitness Coach'),
+    ('B02P04', 'Team Doctor'),
+
+-- TeamCharlie staff
+    ('C03P03', 'Physiotherapist'),
+    ('C03P04', 'Analyst'),
+
+-- TeamDelta staff
+    ('D04P03', 'Fitness Coach'),
+    ('D04P04', 'Team Doctor'),
+
+-- TeamEcho staff
+    ('E05P03', 'Analyst'),
+    ('E05P04', 'Physiotherapist'),
+
+-- TeamFoxtrot staff
+    ('F06P03', 'Fitness Coach'),
+    ('F06P04', 'Team Doctor'),
+
+-- TeamGolf staff
+    ('G07P03', 'Physiotherapist'),
+    ('G07P04', 'Analyst'),
+
+-- TeamHotel staff
+    ('H08P03', 'Fitness Coach'),
+    ('H08P04', 'Team Doctor'),
+
+
+-- TeamIndia staff
+    ('I09P03', 'Physiotherapist'),
+    ('I09P04', 'Analyst'),
+
+-- TeamJuliet staff
+    ('J10P17', 'Fitness Coach'),
+    ('J10P18', 'Team Doctor');
+
+INSERT INTO PLAYER (PlayerCode, Status, Role, ShirtNum)
+VALUES
+-- TeamAlpha players
+('A01P05', 'Fit', 'Forward', 9),
+('A01P06', 'Fit', 'Midfielder', 8),
+('A01P07', 'Injured', 'Defender', 5),
+('A01P08', 'Fit', 'Goalkeeper', 1),
+('A01P09', 'Fit', 'Forward', 11),
+('A01P10', 'Fit', 'Midfielder', 7),
+
+-- TeamBravo players
+('B02P05', 'Fit', 'Forward', 10),
+('B02P06', 'Injured', 'Midfielder', 6),
+('B02P07', 'Fit', 'Defender', 4),
+('B02P08', 'Fit', 'Goalkeeper', 1),
+('B02P09', 'Fit', 'Forward', 11),
+('B02P10', 'Fit', 'Midfielder', 8),
+
+-- TeamCharlie players
+('C03P05', 'Fit', 'Forward', 9),
+('C03P06', 'Fit', 'Midfielder', 8),
+('C03P07', 'Injured', 'Defender', 5),
+('C03P08', 'Fit', 'Goalkeeper', 1),
+('C03P09', 'Fit', 'Forward', 11),
+('C03P10', 'Fit', 'Midfielder', 7),
+
+-- TeamDelta players
+('D04P05', 'Fit', 'Forward', 10),
+('D04P06', 'Fit', 'Midfielder', 6),
+('D04P07', 'Fit', 'Defender', 4),
+('D04P08', 'Fit', 'Goalkeeper', 1),
+('D04P09', 'Fit', 'Forward', 11),
+('D04P10', 'Fit', 'Midfielder', 8),
+
+-- TeamEcho players
+('E05P05', 'Fit', 'Forward', 9),
+('E05P06', 'Fit', 'Midfielder', 8),
+('E05P07', 'Injured', 'Defender', 5),
+('E05P08', 'Fit', 'Goalkeeper', 1),
+('E05P09', 'Fit', 'Forward', 11),
+('E05P10', 'Fit', 'Midfielder', 7),
+
+-- TeamFoxtrot players
+('F06P05', 'Fit', 'Forward', 10),
+('F06P06', 'Fit', 'Midfielder', 6),
+('F06P07', 'Fit', 'Defender', 4),
+('F06P08', 'Fit', 'Goalkeeper', 1),
+('F06P09', 'Fit', 'Forward', 11),
+('F06P10', 'Fit', 'Midfielder', 8),
+
+-- TeamGolf players
+('G07P05', 'Fit', 'Forward', 9),
+('G07P06', 'Fit', 'Midfielder', 8),
+('G07P07', 'Injured', 'Defender', 5),
+('G07P08', 'Fit', 'Goalkeeper', 1),
+('G07P09', 'Fit', 'Forward', 11),
+('G07P10', 'Fit', 'Midfielder', 7),
+
+-- TeamHotel players
+('H08P05', 'Fit', 'Forward', 9),
+('H08P06', 'Fit', 'Midfielder', 8),
+('H08P07', 'Fit', 'Defender', 5),
+('H08P08', 'Fit', 'Goalkeeper', 1),
+('H08P09', 'Fit', 'Forward', 11),
+('H08P10', 'Fit', 'Midfielder', 7),
+
+-- TeamIndia players
+('I09P05', 'Fit', 'Forward', 10),
+('I09P06', 'Fit', 'Midfielder', 6),
+('I09P07', 'Fit', 'Defender', 4),
+('I09P08', 'Fit', 'Goalkeeper', 1),
+('I09P09', 'Fit', 'Forward', 11),
+('I09P10', 'Fit', 'Midfielder', 8),
+
+-- TeamJuliet players
+('J10P05', 'Fit', 'Forward', 9),
+('J10P06', 'Fit', 'Midfielder', 8),
+('J10P07', 'Fit', 'Defender', 5),
+('J10P08', 'Fit', 'Goalkeeper', 1),
+('J10P09', 'Fit', 'Forward', 11),
+('J10P10', 'Fit', 'Midfielder', 7);
+
+-- Insert data into IS_PLAYED table
+INSERT INTO IS_PLAYED (is_PlayedCode, is_MatchCode, is_YearCode, Role, TimeIn, TimeOut)
+VALUES
+('J10P08', 'M1', 2022, 'PL', '15:00:00', '16:30:00'),
+('I09P06', 'M1', 2022, 'DF', '15:00:00', '16:30:00'),
+('H08P10', 'M1', 2022, 'MF', '15:00:00', '16:30:00'),
+('G07P06', 'M2', 2022, 'PL', '17:00:00', '18:30:00'),
+('F06P10', 'M2', 2022, 'DF', '17:00:00', '18:30:00'),
+('E05P07', 'M5', 2022, 'MF', '21:00:00', '22:30:00'),
+('D04P09', 'M5', 2022, 'PL', '21:00:00', '22:30:00'),
+('C03P05', 'M6', 2022, 'DF', '14:00:00', '15:30:00'),
+('B02P06', 'M2', 2022, 'PL', '17:00:00', '18:30:00'),
+('A01P07', 'M2', 2022, 'MF', '17:00:00', '18:30:00'),
+('J10P08', 'M3', 2022, 'PL', '19:00:00', '20:30:00'),
+('I09P06', 'M3', 2022, 'DF', '19:00:00', '20:30:00'),
+('H08P10', 'M3', 2022, 'MF', '19:00:00', '20:30:00'),
+('G07P06', 'M4', 2022, 'PL', '20:00:00', '21:30:00'),
+('F06P10', 'M4', 2022, 'DF', '20:00:00', '21:30:00'),
+('E05P07', 'M4', 2022, 'MF', '20:00:00', '21:30:00'),
+('D04P09', 'M5', 2022, 'PL', '21:00:00', '22:30:00'),
+('C03P05', 'M5', 2022, 'DF', '21:00:00', '22:30:00');
+
+INSERT INTO CARD (TypeCard, Time, Card_Player, Card_Match, Card_HYear)
+VALUES
+('Y', '15:30:00', 'J10P08', 'M1', 2022),
+('R', '16:00:00', 'I09P06', 'M1', 2022),
+('Y', '18:00:00', 'H08P07', 'M2', 2022),
+('R', '18:15:00', 'G07P09', 'M2', 2022),
+('Y', '20:45:00', 'F06P07', 'M3', 2022),
+('R', '21:15:00', 'E05P08', 'M4', 2022),
+('Y', '22:00:00', 'D04P06', 'M4', 2022),
+('R', '22:15:00', 'C03P08', 'M4', 2022),
+('Y', '20:30:00', 'B02P05', 'M5', 2022),
+('R', '21:00:00', 'A01P10', 'M5', 2022),
+('Y', '21:45:00', 'J10P08', 'M5', 2022),
+('R', '22:00:00', 'I09P06', 'M5', 2022),
+('Y', '15:00:00', 'H08P07', 'M6', 2022),
+('R', '15:30:00', 'G07P09', 'M6', 2022),
+('Y', '16:45:00', 'F06P07', 'M6', 2022),
+('R', '17:00:00', 'E05P08', 'M6', 2022);
+
+INSERT INTO GOALS (TimeGoal, Goal_Player, Goal_Match, Goal_HYear) VALUES
+('15:30:00', 'J10P05', 'M1', 2022),
+('16:00:00', 'I09P09', 'M1', 2022),
+('18:00:00', 'H08P07', 'M2', 2022),
+('18:15:00', 'G07P08', 'M2', 2022),
+('20:45:00', 'F06P07', 'M3', 2022),
+('21:15:00', 'E05P10', 'M4', 2022),
+('22:00:00', 'D04P06', 'M4', 2022),
+('22:15:00', 'C03P08', 'M4', 2022),
+('20:30:00', 'B02P06', 'M5', 2022),
+('21:00:00', 'A01P10', 'M5', 2022),
+('21:45:00', 'J10P05', 'M5', 2022),
+('22:00:00', 'I09P09', 'M5', 2022),
+('15:00:00', 'H08P07', 'M6', 2022),
+('15:30:00', 'G07P08', 'M6', 2022),
+('16:45:00', 'F06P07', 'M6', 2022),
+('17:00:00', 'E05P10', 'M6', 2022);
+
+INSERT INTO ASSISTS (TimeAssist, Assist_Player, Assist_Match, Assist_HYear) 
+VALUES
+('16:30:00', 'J10P05', 'M1', 2022),
+('17:45:00', 'I09P08', 'M2', 2022),
+('19:15:00', 'H08P07', 'M3', 2022),
+('20:30:00', 'G07P08', 'M4', 2022),
+('21:45:00', 'F06P07', 'M5', 2022),
+('22:00:00', 'E05P08', 'M5', 2022),
+('22:30:00', 'D04P06', 'M5', 2022),
+('15:30:00', 'C03P08', 'M6', 2022),
+('18:00:00', 'B02P06', 'M3', 2022),
+('19:30:00', 'A01P10', 'M3', 2022),
+('20:45:00', 'J10P09', 'M4', 2022),
+('21:00:00', 'G07P08', 'M4', 2022),
+('15:45:00', 'F06P07', 'M5', 2022),
+('16:30:00', 'E05P08', 'M5', 2022),
+('17:15:00', 'D04P06', 'M6', 2022),
+('18:00:00', 'C03P08', 'M6', 2022),
+('18:45:00', 'B02P06', 'M6', 2022);
+
+-- Insert data into PLAY_IN table
+INSERT INTO PLAY_IN (TeamPlay, MatchPlay, HYearPlay)
+VALUES
+('TeamAlpha', 'M1', 2022),
+('TeamBravo', 'M5', 2022),
+('TeamCharlie', 'M3', 2022),
+('TeamDelta', 'M4', 2022),
+('TeamEcho', 'M19', 2022),
+('TeamFoxtrot', 'M23', 2022),
+('TeamGolf', 'M24', 2022),
+('TeamHotel', 'M27', 2022),
+('TeamIndia', 'M12', 2022),
+('TeamJuliet', 'M32', 2022);
