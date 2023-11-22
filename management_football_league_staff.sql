@@ -36,6 +36,7 @@ CREATE TABLE `staff` (
 
 LOCK TABLES `staff` WRITE;
 /*!40000 ALTER TABLE `staff` DISABLE KEYS */;
+INSERT INTO `staff` VALUES ('A01P03','Physiotherapist'),('A01P04','Analyst'),('B02P03','Fitness Coach'),('B02P04','Team Doctor'),('C03P03','Physiotherapist'),('C03P04','Analyst'),('D04P03','Fitness Coach'),('D04P04','Team Doctor'),('E05P03','Analyst'),('E05P04','Physiotherapist'),('F06P03','Fitness Coach'),('F06P04','Team Doctor'),('G07P03','Physiotherapist'),('G07P04','Analyst'),('H08P03','Fitness Coach'),('H08P04','Team Doctor'),('I09P03','Physiotherapist'),('I09P04','Analyst'),('J10P07','Fitness Coach'),('J10P08','Team Doctor');
 /*!40000 ALTER TABLE `staff` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-22 13:59:10
+-- Dump completed on 2023-11-22 14:14:03

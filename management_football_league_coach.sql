@@ -43,6 +43,7 @@ CREATE TABLE `coach` (
 
 LOCK TABLES `coach` WRITE;
 /*!40000 ALTER TABLE `coach` DISABLE KEYS */;
+INSERT INTO `coach` VALUES ('A01P01','UEFA Pro',5,NULL,'TeamAlpha'),('A01P02','UEFA B',3,'A01P01','TeamAlpha'),('B02P01','CONMEBOL Pro',4,NULL,'TeamBravo'),('B02P02','CONMEBOL A',2,'B02P01','TeamBravo'),('C03P01','AFC Pro',4,NULL,'TeamCharlie'),('C03P02','AFC A',2,'C03P01','TeamCharlie'),('D04P01','CAF Pro',3,NULL,'TeamDelta'),('D04P02','CAF B',1,'D04P01','TeamDelta'),('E05P01','AFC Pro',5,NULL,'TeamEcho'),('E05P02','AFC A',3,'E05P01','TeamEcho'),('F06P01','CAF Pro',4,NULL,'TeamFoxtrot'),('F06P02','CAF B',2,'F06P01','TeamFoxtrot'),('G07P01','AFC Pro',5,NULL,'TeamGolf'),('G07P02','AFC A',3,'G07P01','TeamGolf'),('H08P01','UEFA A',4,NULL,'TeamHotel'),('H08P02','UEFA B',2,'H08P01','TeamHotel'),('I09P01','CONMEBOL Pro',3,NULL,'TeamIndia'),('I09P02','CONMEBOL A',1,'I09P01','TeamIndia'),('J10P01','UEFA Pro',5,NULL,'TeamJuliet'),('J10P02','UEFA B',3,'J10P01','TeamJuliet');
 /*!40000 ALTER TABLE `coach` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-22 13:59:09
+-- Dump completed on 2023-11-22 14:14:03
